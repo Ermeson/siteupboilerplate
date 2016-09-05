@@ -1,13 +1,5 @@
 /*****
-*
-*
-* Author Name : Mostafizur Rahman
-* Author URI : http://mostafiz.me
-* Description : This is a responsive HTML5 and Bootstrap portolio template developed my Mostafizur Rahman
-* Template URI : http://mostafiz.me/demo/folio/
-* Version : 1.1
-*
-*
+*siteup boilerplate by ermeson silva
 *****/
 
 body{
@@ -17,13 +9,19 @@ body{
 }
 a:hover, a:visited, a{
 	text-decoration: none;
+	text-decoration: none;
+  transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
 }
 /*header area*/
 .top-header{
-	background: #02918C;
+	background: #fff;
 	position: fixed;
 	width: 100%;
 	z-index: 333;
+	border-bottom: solid 3px #eee;
 }
 .header-row{
 	margin: 0;
@@ -31,8 +29,6 @@ a:hover, a:visited, a{
 }
 .top-header img.logo{
 	float: left;
-	margin-top: 8px;
-	margin-bottom: 30px;
 	transition:all 0.7s ease 0s;
 	-webkit-transition:all 0.7s ease 0s;
 	-moz-transition:all 0.7s ease 0s;
@@ -43,7 +39,6 @@ a:hover, a:visited, a{
   background-color: transparent;
   border-color: transparent;
   margin-bottom: 0;
-  margin-top: 23px;
   transition:all 0.7s ease 0s;
 	-webkit-transition:all 0.7s ease 0s;
 	-moz-transition:all 0.7s ease 0s;
@@ -53,15 +48,20 @@ a:hover, a:visited, a{
 .navbar-toggle span{
 	color: #fff;
 }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	padding-top: 30px;
+}
+section{
+	padding: 60px 0;
+}
 ul.nav{
 	margin: 0;
 	padding: 0;
 }
 .navbar-default .navbar-nav>li>a {
- 	font-size: 12px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 800;
+ 	font-size: 18px;
+	color: #864C93;
+	font-weight: 400;
 	transition: all .7s ease 0s;
 	-webkit-transition: all .7s ease 0s;
 	-moz-transition: all .7s ease 0s;
@@ -78,34 +78,35 @@ ul.nav{
   border-color: #fff;
   margin-top: 4px;
 }
-/*banner area*/
-.banner{
-	background: url(../img/banner.jpg);
+/*hero area*/
+.hero{
+	background: url(../img/hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
-.banner h3{
+.hero h3{
 	font-size: 30px;
 	color: #fff;
-	margin-top: 205px;
 	font-weight: 800;
+	margin-top: 40px;
 }
-.banner h1{
+.hero h1{
 	font-size: 68px;
 	color: #fff;
+	margin-top: 225px;
 	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 10px;
 }
-.banner p{
+.hero p{
 	font-size: 18px;
 	color: #fff;
 }
-.banner img{
+.hero img{
 	margin: 50px;
 }
-.banner button{
+.hero button{
 	width: 190px;
 	height: 50px;
 	font-size: 14px;
@@ -122,226 +123,28 @@ ul.nav{
 	-ms-transition: all .5s ease 0s;
 
 }
-.banner button:hover{
+.hero button:hover{
 	background: red;
 	color: #fff;
 }
-/*about section*/
-.about{
-	background: #fff;
+.description{
+	max-width: 470px;
+	color: #888;
+	font-weight: 400;
+	font-size: 18px;
 }
-.about h2{
-	font-size: 46px;
-	color: #02918c;
-	font-weight: 800;
-	text-transform: uppercase;
-	margin-top: 90px;
-	margin-bottom: 30px;
+.list-features{
+	margin-top: 40px;
 }
-.about-heading img{
-	margin-bottom: 30px;
+.feat h4{
+	color: #121212;
+	font-weight: 400;
 }
-.about-heading p{
-	font-size: 16px;
-	color: #7e8287;
-	margin-bottom: 80px;
-
+.feat p{
+	color: #888;
 }
-.about-heading p span{
-	font-size: 23px;
-}
-.single-about{
-	margin-bottom: 90px;
-}
-.single-about + .single-about{
-	border-left: 1px solid #d9dbdb;
-}
-.about-inside{
-	padding: 50px;
-}
-.single-about:hover{
-	background: red;
-	color: #fff;
-}
-.about-inside h3{
-	font-size: 16px;
-	color: #7e8287;
-	font-weight: 800;
-}
-.about-inside p{
-	font-size: 11px;
-	color: #7e8287;
-}
-.about-inside i.fa{
-	color: #02918c;
-	font-size: 30px;
-}
-.single-about:hover .about-inside i.fa{
-	color: #fff;
-}
-.single-about:hover .about-inside p{
-	color: #fff;
-}
-.single-about:hover .about-inside h3{
-	color: #fff;
-}
-/*service area*/
-.service{
-	margin: 0;
-	padding: 0;
-	background: url(../img/typing-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	position: relative;
-}
-.service-overlay{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background-color: rgba(255, 255, 255, 0.43);
-}
-.service h2{
-	font-size: 46px;
-	color: #02918c;
-	text-transform: uppercase;
-	font-weight: 800;
-	margin-top: 75px;
-	margin-bottom: 40px;
-}
-.service p{
-	font-size: 16px;
-	color: #7e8287;
-	margin-top: 35px;
-}
-.services{
-	margin-left: 0;
-	padding-left: 0;
-}
-.bottom-services{
-	margin-bottom: 80px;
-}
-.single-service{
-	margin-left: 0;
-	padding-left: 20px;
-	margin-top: 50px;
-	background: #F5F5F1;
-}
-.single-service:hover{
-	background: red;
-}
-.single-service i.fa{
-	color: #08938e;
-	font-size: 30px;
-	padding-top: 15px;
-}
-.single-service h3{
-	font-size: 16px;
-	color: #7e8287;
-}
-.single-service p{
-	font-size: 11px;
-	color: #7e8287;
-	margin-top: 5px;
-}
-.single-service:hover.single-service i.fa{
-	color: #fff;
-}
-.single-service:hover.single-service h3{
-	color: #fff;
-}
-.single-service:hover.single-service p{
-	color: #fff;
-}
-/*portfolio area*/
-.portfolio h2{
-	font-size: 46px;
-	color: #02918c;
-	margin-top: 100px;
-	font-weight: 800;
-	margin-bottom: 35px;
-}
-.portfolio-row{
-	margin: 0;
-	padding: 0;
-}
-.portfolio-heading img{
-	margin-bottom: 30px;
-}
-.portfolio-heading p{
-	font-size: 16px;
-	color: #7e8287;
-	margin-bottom: 80px;
-}
-.single-portfolio{
-	margin: 0;
-	padding: 0;
-	position: relative;
-}
-.single-portfolio i.fa {
-  position: absolute;
-  z-index: 222;
-  right: 0px;
-  bottom: 0px;
-  font-size: 25px;
-  background: rgba(0, 0, 0, 0.39);
-  padding: 10px;
-  color: #fff;
-  display: none;
-}
-.single-portfolio:hover.single-portfolio i.fa{
-	display: block;
-}
-.portfolio-item{
-	position: relative;
-	z-index: 10;
-}
-.portfolio-details{
-	position: absolute;
-	z-index: 99;
-	top: 25px;
-  	left: 32px;
-	width: 80%;
-	height: 80%;
-	background: rgba(2, 145, 140, 0.77);
-	display: none;
-}
-.single-portfolio:hover .portfolio-details{
-	display: block;
-}
-.portfolio-item img{
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-}
-.portfolio-details h4{
-	font-size: 16px;
-	color: #fff;
-	font-weight: 800;
-	margin-top: 55px;
-}
-.portfolio-details p{
+.mini{
 	font-size: 13px;
-	color: #fff;
-	padding: 5px 20px;
-}
-/*contact area*/
-.contact{}
-.contact h2{
-	font-size: 46px;
-	color: #02918c;
-	margin-top: 100px;
-	font-weight: 800;
-	margin-bottom: 35px;
-}
-.contact p{
-	font-size: 16px;
-	color: #7e8287;
-	margin-top: 30px;
-	margin-bottom: 70px;
 }
 .contact-form{
 	margin: 0;
@@ -398,25 +201,25 @@ input.message{
 color:#EFEFEF;
 }
 .form-input:-moz-placeholder { /* Firefox 18- */
-   color:#EFEFEF; 
+   color:#EFEFEF;
 }
 
 .form-input::-moz-placeholder {  /* Firefox 19+ */
-   color:#EFEFEF; 
+   color:#EFEFEF;
 }
 
-.form-input:-ms-input-placeholder {  
-   color:#EFEFEF;  
+.form-input:-ms-input-placeholder {
+   color:#EFEFEF;
 }
 /*footer area*/
-
 .footer{
-	background: #000;
+	background: #eee;
+	padding: 30px 0;
 }
 .footer p{
 	color: #7e8287;
-	font-size: 12px;
-	padding:25px;
+	font-size: 16px;
+	padding: 15px 0 0 0;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFF;
@@ -425,22 +228,44 @@ color:#EFEFEF;
 	width: 600px;
 	height: 400px;
 }
-
-
+.social{
+	display: inline-flex;
+	list-style: none;
+}
+.list{
+	list-style: none;
+	display: inline-flex;
+	font-size: 16px;
+	padding: 15px 0 0 0;
+}
+.list li{
+		margin: 0 10px;
+}
+.list li a{
+	color: #8c8c8c;
+}
+.list li a:hover{
+	color: #000;
+	text-decoration: none;
+	transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+}
 
 
 
 /******************************
 responsive area
 ********************************/
-/* lg */ 
+/* lg */
 @media (min-width: 1200px) {
-	
+
 }
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
-	
+
 
 }
 
@@ -469,7 +294,7 @@ responsive area
 	input.message{
 		width: 420px;
 	}
-	.banner h1 {
+	.hero h1 {
 	  font-size: 60px;
 	  letter-spacing: 3px;
 	}
@@ -498,7 +323,7 @@ responsive area
 		height: 50px;
 		border:0;
 	}
-	.banner h1 {
+	.hero h1 {
 		  font-size: 38px;
 		  letter-spacing: 0px;
 	}
@@ -509,21 +334,3 @@ responsive area
 		padding: 0px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
