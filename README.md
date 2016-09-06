@@ -17,6 +17,7 @@
 ### Roadmap
 
 - [ ] forms components
+- [ ] favicons
 - [ ] svg suport
 - [ ] minify
 - [ ] ui kit (buttons, etc)
