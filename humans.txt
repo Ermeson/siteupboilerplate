@@ -1,0 +1,17 @@
+/* TEAM */
+	Chef: Ermeson Silva
+	Contact: ermeson [at] aller.co
+	Instagram: @erminsilva
+	From:Ceara, Cariri, Brazil
+
+	UI developer: Ermeson Silva
+	Twitter: @erminsilva
+	From:Ceara, Cariri, Brazil
+
+	Media Queries and JS by: Ermeson Silva (@erminsilva)
+
+/* SITE */
+	Last update:2016/09/05
+	Language: English / Portugues-BR
+	Doctype:HTML5
+	IDE: Sublime Text, Notepad++, FileZilla, Photoshop, Bootstrap, Atom.io
