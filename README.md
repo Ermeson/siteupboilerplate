@@ -1,6 +1,6 @@
-# siteupboilerplate
+# Siteup Boilerplate
 
-### roadmap da primeira versão
+## Contains
 
 - [x] sitemap
 - [x] 404 page
@@ -13,3 +13,17 @@
 - [x] bootstrap
 - [x] smoothscroll
 - [x] jquery
+
+### Roadmap
+
+- [ ] forms components
+- [ ] svg suport
+- [ ] minify
+
+### Note
+
+My personal project basic for dev fast front-end website at siteup and aller.co
+
+### License
+
+MIT
